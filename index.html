@@ -9,77 +9,87 @@
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <!--Header Section-->
-    <header class="md:container mx-auto ">
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h8m-8 6h16" />
-                  </svg>
-                </div>
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                  <li><a>Item 1</a></li>
-                  <li>
-                    <a>Parent</a>
-                    <ul class="p-2">
-                      <li><a>Submenu 1</a></li>
-                      <li><a>Submenu 2</a></li>
-                    </ul>
-                  </li>
-                  <li><a>Item 3</a></li>
-                </ul>
+  <header class="bg-[#FFF9C4] py-4">
+    <div class="container mx-auto flex justify-between items-center px-4">
+  
+      <div class="flex items-center">
+        <img src="./logo-header.png" alt="Logo" class="h-8 w-auto"> 
+        <div class="relative hidden md:block"> 
+        <span class="ml-2 text-xl font-bold text-gray-800">Browse Pets</span> 
+      </div> 
+    </div>
+  
+      <nav class="hidden md:flex space-x-6">
+        <a href="#" class="text-gray-600 hover:text-gray-800">Find a pet</a>
+        <a href="#" class="text-gray-600 hover:text-gray-800">Breeds</a>
+        <a href="#" class="text-gray-600 hover:text-gray-800">Contact us</a>
+      </nav>
+  
+      <div class="flex items-center space-x-4">
+        <div class="relative hidden md:block"> 
+          <div class="flex">
+          <img src="./nooti.png" alt="notification">
+                <img src="./searrch.png" alt="search-bar">
               </div>
-              <img src="./logo-header.png" alt="header">
-              <a class="btn btn-ghost text-2xl">Browse <span>4</span>Cats</a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-               
-                <li> <a class="font-bold">Find a Pet</a></li>
-                <li><a class="font-bold"> Breeds</a></li>
-                <li><a class="font-bold">Contact Us</a></li>
-              </ul>
-            </div>
-            <div class="navbar-end">
+          <!--<input type="text" placeholder="Search" class="border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-500" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+          </svg>-->
+        </div>
+        <div class="relative hidden md:block"> 
+          <button class="md:hidden text-gray-600 hover:text-gray-800 focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+  
+        <div>
+          <button class="text-gray-600 hover:text-gray-800">Login</button>
+          <button class="bg-yellow-400 hover:bg-yellow-500 text-white font-bold py-2 px-4 rounded">Register</button>
+        </div>
+      </div>
+    </div>
+  
+    <div class="hidden md:hidden" id="mobileMenu">
+      <div class="bg-gray-100 py-4 px-6 flex flex-col space-y-3">
+        <a href="#" class="text-gray-600 hover:text-gray-800">Find a pet</a>
+        <a href="#" class="text-gray-600 hover:text-gray-800">Breeds</a>
+        <a href="#" class="text-gray-600 hover:text-gray-800">Contact us</a>
+        <a href="#" class="text-gray-600 hover:text-gray-800">Login</a>
+        <a href="#" class="bg-yellow-400 hover:bg-yellow-500 text-white font-bold py-2 px-4 rounded">Register</a>
+      </div>
+    </div> </div>
+  </header>
+    <!--Header Section-->
+    
+            <!--<div class="navbar-end">
                 <img src="./nooti.png" alt="notification">
                 <img src="./searrch.png" alt="search-bar">
               <a class="btn">Login</a>
               <a class="btn btn-warning">Register</a>
-            </div>
-          </div>
-    </header>
+            </div> -->
+         
+    
 
 <!--Mian 1st Section-->
  <main class="md:container mx-auto bg-white">
     
-     <div class="bg-white">
+     <div class="bg-white p-10">
         <div class="relative h-screen"> 
             <img src="./cat-big.png" alt="Cat"
              class="absolute inset-0 w-full h-full object-cover"> 
             <div class="absolute inset-0 "></div> 
     
-            <div class="absolute inset-0 flex flex-col items-center justify-center text-left  text-black">
+            <div class="absolute inset-0 flex flex-col items-left justify-middle text-left  text-black p-9 m-4">
+              <div class="text-left lg:text-left">
                 <h1 class="text-4xl font-bold mb-4 text-left lg:text-left">Pamper Your Pet, <br> Because They Deserve  <br>the Bes</h1>
              
                 <p class="text-lg mb-8 text-left text-black">Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!</p>
-                <button class="bg-yellow-400 text-black py-2 px-6 rounded-lg font-medium hover:bg-yellow-500 transition duration-300 text-center lg:text-left ">
+                <button class="bg-yellow-400 text-black py-2 px-6 rounded-lg font-medium hover:bg-yellow-500 transition duration-300 text-left lg:text-left ">
                     Find a pet
                 </button>
             </div>
-        </div>
+        </div></div>
     </div>
    
         </div>
@@ -92,8 +102,13 @@
   
       <div class="bg-yellow-300 rounded-lg p-4 flex flex-col items-center">
         <div class="text-4xl mb-2">
+         <!--<div class="relative h-screen"> 
+            <img src="./dog-cartoon.png" alt="dog"
+             class="absolute inset-0 w-full h-full object-cover"> 
+            <div class="absolute inset-0 "></div> -->
+
             <img src="./dog-cartoon.png" alt="dog logo">
-        </div> <div class="text-center">
+        </div> <div class="text-left">
           <h3 class="text-lg font-medium text-black">Dog</h3>
           <p class="text-sm text-gray-800">3 items</p>
         </div>
@@ -351,64 +366,66 @@
     </div>
         <!-- Next section -->
         
-        <div class="container">
-          <h2 class="text-2xl font-bold text-black mb-4">Everyday low Price</h2>
+        <div class="container p-10">
+          <h2 class="text-2xl font-bold text-black mb-4 p-4">Everyday low Price</h2>
 
           <div class="container mx-auto p-4">
             <div class="flex flex-col md:flex-row gap-4">
           
-              <div class="md:w-[57%] bg-white rounded-lg shadow-md p-6">
+                <div class="md:w-[57%] bg-white rounded-lg shadow-md p-6">
                 <div class="bg-gradient-to-r from-purple-300 to-yellow-200">
                 <div class="flex justify-between items-center mb-4">
                   
                 </div>
                 <div class="flex flex-col md:flex-row items-center">
                   
-                    
-                  <div class="md:w-1/2 md:pl-4 mt-4 md:mt-0">
-                    <p class="text-gray-600">Under Price</p>
+                  <div class="p-8" >
+                  <div class="md:w-1/2 md:pl-0 mt-0 md:mt-0 ">
+                    <p class="text-black-600 ">Under Price</p>
                     <h3 class="text-xl font-semibold">Pet Grooming Mitt</h3>
-                    <p class="text-gray-600">(Easy Hair Removal)</p>
+                    <p class="text-white-100">(Easy Hair Removal)</p>
                     <p class="text-2xl font-bold text-gray-800">$7.99</p>
 
-                  </div>
-                  <div class="md:w-1/2">
+                  </div></div> 
+
+                  <div class="md:w-1/2 ">
                     <img src="./cute-dog-mid.png" alt="Pet Grooming Mitt" 
                     class="max-w-full h-auto rounded-md"> 
                   </div>
                 </div></div>
               </div>
           
-              <div class="md:w-[40%] bg-white rounded-lg shadow-md p-6">
+              <div class="md:w-[40%] bg-white rounded-lg shadow-md p-4">
                 <div class="bg-gradient-to-r from-purple-500 to-pink-200">
               
-                <div class="flex justify-between items-center-top mb-4">
-                
+                <div class="flex justify-between items-center mb-4">
+                </div>
 
+                   <div class="flex flex-col md:flex-row items-center-top">
+                    <div class="p-5">
                     <h2 class="text-lg font-semibold">T-Shirt for Dogs</h2>
                   <div><br>
-                    <p class="text-2xl font-bold text-orange-900">$8.99</p>
-                  </div>
-                  <img src="./cute-pet-small.png" alt="Dog T-Shirt" class="max-w-full h-auto rounded-md">
+                    <h1 class="text-2xl font-bold text-orange-900">$8.99</h1>
+                  </div></div>
+                  <div class="md:w-1/2 ">
+                   <img src="./cute-pet-small.png" alt="Dog T-Shirt" class="max-w-full h-auto rounded-md ">
                 </div>
-              </div>
-            </div></div>
-          </div>
-  
-        
-        <!-- Add more cards as needed -->
+              </div> 
+            </div>
       </div>
-    </div>
-    <div class="bg-[#FFF9F0] font-sans p-16">
-
-      <div class="relative h-screen flex flex-col md:flex-row items-center justify-center">
+    </div> 
     
-        <div class="md:w-1/2 md:block hidden p-6"> 
+    <!-- Add more cards as needed -->
+    <div class="bg-[#FFF9F0] font-sans m-10">
+
+      <div class="relative h-screen[80%] flex flex-col md:flex-row items-center justify-center">
+    
+        <div class="md:w-1/3 md:block sm:p-2 lg:p-10"> 
           <img src="./cute-pet-small.png" alt="Cute Dog" 
           class="object-cover ">
         </div>
     
-        <div class="md:w-1/2 p-8 md:p-16 bg-[#FFF9F0] rounded-lg shadow-md text-center md:text-left">
+        <div class="md:w-2/3 p-8 md:p-16 bg-[#FFF9F0] rounded-lg  text-center md:text-left">
           <h2 class="text-3xl font-bold text-[#374151] mb-4">Get Pawsome News!</h2>
           <p class="text-gray-600 mb-6">Exclusive training tips, tricks, product deals and more.</p>
                <br><br>
@@ -431,9 +448,9 @@
 
 
     <footer>
-      <div class="bg-[#FFA500] font-sans" >
+      <div class="bg-[#FFF9C4] font-sans" >
 
-        <div class="bg-[#FFF9F0] py-8 px-4 md:px-16">
+        <div class="bg-[#FFF9C4] py-8 px-4 md:px-16">
           <div class="container mx-auto flex flex-col md:flex-row justify-between items-start">
       
             <div class="mb-6 md:mb-0 text-left">
